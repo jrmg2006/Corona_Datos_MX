@@ -1,41 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
     <title>Corona MX</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!--? MAIN -->
+    <main class="container-fluid">
+      <!--? Seccion header -->
+      <section class="header container">
+        <div class="col-12 d-flex justify-content-center mt-3">
+          <!--? Imagen logo corona -->
+          <img
+            id="logo-corona"
+            class="img-fluid"
+            src="./images/logo-corona.svg"
+            alt="logo"
+          />
+        </div>
+        <!--? Texto registro -->
+        <div class="col-12 d-flex justify-content-center mt-4">
+          <h6 id="texto-registrate">Regístrate</h6>
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-2">
+          <h6>Datos personales</h6>
+        </div>
+      </section>
 
-    <main class="container">
-        <section class="header">
-            <img class="img-fluid" src="./images/logo-corona.svg" alt="logo">
-            <h6>Regístrate</h6>
-            <h6>Datos personales</h6>
-        </section>
-
-        <section class="formulario">
-            <div class="row">
-                <div class="col-12">
-                    <label><h6>Nombre completo</h6></label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="col-12">
-                    <label><h6>Nombre completo</h6></label>
-                    <input type="email" class="form-control">
-                </div>
-                <div class="col-12"></div>
-                <div class="col-12"></div>
-                <div class="col-12"></div>
+      <!--?Seccion Formulario-->
+      <section class="formulario container mt-3">
+        <!--?FORMULARIO-->
+        <form action="" class="">
+          <!--?Contenedor formulario-->
+          <div class="row align-items-end justify-content-center ms-4 me-4">
+            <!--?Input nombre completo-->
+            <div class="col-12">
+              <label><h6>Nombre completo</h6></label>
+              <input
+                type="text"
+                name="nombre"
+                class="form-control shadow-none"
+                required
+              />
             </div>
-        </section>
-
-        <section class="footer">
-
-        </section>
+            <!--?Input email-->
+            <div class="col-12 mt-3">
+              <label><h6>Correo electrónico</h6></label>
+              <input
+                type="email"
+                name="email"
+                class="form-control shadow-none"
+                required
+              />
+            </div>
+            <!--?Input indicativo telefono-->
+            <div class="col-12 col-lg-6">
+              <select
+                name="indicativo"
+                class="form-select shadow-none"
+                required
+              >
+                <option value="" disabled selected>+57</option>
+                <option value="57">+57</option>
+                <option value="51">+51</option>
+                <option value="593">+593</option>
+              </select>
+            </div>
+            <!--?Input telefono-->
+            <div class="col-12 col-lg-6 mt-3">
+              <input
+                type="number"
+                name="telefono"
+                class="form-control shadow-none"
+                required
+              />
+            </div>
+            <!--?Input fecha nacimiento-->
+            <div class="col-12 mt-3">
+              <label><h6>Fecha de nacimiento</h6></label>
+              <input
+                type="date"
+                name="fecha"
+                class="form-control shadow-none"
+                required
+              />
+            </div>
+            <article class="col-12 legal">
+              <!--?Label texto politicas de privacidad-->
+              <div id="texto-politica" class="col-12 mt-4">
+                <label
+                  >Acepta nuestros términos y condiciones para registrarte con
+                  la opción que elegistes.</label
+                >
+              </div>
+              <!--?Checkbox politicas de privacidad-->
+              <div class="col-12 form-check mt-1">
+                <input
+                  class="form-check-input shadow-none"
+                  type="checkbox"
+                  name="tcpp"
+                  value=""
+                  id="flexCheckDefault"
+                  required
+                />
+                <label
+                  class="form-check-label texto-checkbox"
+                  for="flexCheckDefault"
+                >
+                  Acepto las políticas de privacidad y términos y condiciones.
+                </label>
+              </div>
+              <!--?Checkbox marketing activation-->
+              <div class="col-12 form-check mt-1">
+                <input
+                  class="form-check-input shadow-none"
+                  type="checkbox"
+                  name="marketin"
+                  value=""
+                  id="flexCheckDefault"
+                  required
+                />
+                <label
+                  class="form-check-label texto-checkbox"
+                  for="flexCheckDefault"
+                >
+                  Deseo recibir informacion comercial y eventos de Grupo Modelo.
+                </label>
+              </div>
+            </article>
+            <!--?Boton registrarme-->
+            <div class="col-12 mt-3">
+              <input
+                class="btn btn-primary rounded-pill shadow-none col-12"
+                type="submit"
+                value="REGISTRARME"
+              />
+            </div>
+            <!--?Link ya tengo cuenta-->
+            <div class="col-12 d-flex justify-content-center mt-2">
+              <label id="link-ya-tengo-cuenta"
+                >Ya tengo cuenta, <a href="#">Ingresar</a></label
+              >
+            </div>
+          </div>
+        </form>
+      </section>
+      <!--?Seccion footer-->
+      <section class="footer mt-3">
+        <!--?Nav fotter-->
+        <nav
+          class="
+            col-12
+            navbar navbar-light
+            bg-light
+            d-flex
+            justify-content-center
+          "
+        >
+          <ul class="mt-1 mb-0">
+            <li>
+              <a class="navbar-brand mb-0" href="#">Términos y condiciones</a>
+            </li>
+            <li>
+              <a class="navbar-brand mb-0" href="#">Aviso de privacidad</a>
+            </li>
+            <li><a class="navbar-brand mb-0" href="#">FAQ</a></li>
+          </ul>
+        </nav>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>
