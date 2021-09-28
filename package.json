@@ -1,0 +1,23 @@
+{
+  "name": "Corona_Datos_MX",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css sass/custom.css --content index.html -o css/estilosreducidos.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrmg2006/Corona_Datos_MX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrmg2006/Corona_Datos_MX/issues"
+  },
+  "homepage": "https://github.com/jrmg2006/Corona_Datos_MX#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  }
+}

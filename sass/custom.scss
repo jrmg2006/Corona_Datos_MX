@@ -1,0 +1,63 @@
+
+$gray-900: #a6afb8;
+$font-family-sans-serif: 'Raleway', sans-serif;
+$blue: #031d3f;
+
+section nav ul li a {
+    text-decoration: underline !important;
+    font-size: 0.9rem !important;
+    
+}
+
+section nav ul{
+    list-style: none !important;
+}
+
+section.header h6{
+    color:black !important;
+    font-weight: initial !important;
+}
+
+section.header h6#texto-registrate{
+    font-weight: bold !important;
+    font-size: 1.1rem !important;
+}
+
+#logo-corona{
+    width: 100px !important;
+}
+
+.form-check-input:checked{
+    background-color: #031d3f !important;
+    border-color: #031d3f !important;
+}
+
+article.legal label{
+    color: #031d3f !important;
+}
+article.legal label.texto-checkbox{
+    font-size: 0.7rem !important;
+}
+
+#texto-politica{
+    font-weight: bold  !important;
+}
+
+#link-ya-tengo-cuenta{
+    color: black !important;
+    font-size: 0.9rem !important;
+}
+
+#link-ya-tengo-cuenta a{
+    color: black !important;
+}
+
+.error{
+    color: red;
+}
+label#tcpp-error.error{
+    color: red !important;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
