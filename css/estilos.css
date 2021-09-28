@@ -71,3 +71,10 @@ article.legal label.texto-checkbox{
 #link-ya-tengo-cuenta a{
     color: black !important;
 }
+
+.error{
+    color: red;
+}
+label#tcpp-error.error{
+    color: red !important;
+}
